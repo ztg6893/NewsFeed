@@ -1,0 +1,141 @@
+<html>
+<head>
+    
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <title>New own RSS reader demonstration</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="rss.js"></script>
+       
+</head>
+<body>
+
+    <br>
+    <select class="selectpicker" id = "all" onchange = "display()">
+        
+        <option id = "showall" value="showall">All News</option>
+		<option id = "sports" value="sports">Sports</option>
+        <option id = "weather" value="weather">Weather</option>
+        <option id = "world" value="world">World</option>
+        <option id = "tech" value="tech">Tech</option>
+       
+    </select>
+    </div>
+    </div>
+<!main>
+
+<!sports>
+    <div  id="sportsId" style="
+    background:#FFF;
+ 
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+">
+        <h1>Sports</h1>
+        <p>ESPN</p>
+        <div class="post_results" id="post_results8" rss_num="4" rss_url="http://www.espn.com/espn/rss/news">
+            <div class="loading_rss">
+                <img alt="Loading..." src="Images/loading.gif" />
+            </div>
+        </div>
+        <p>Yahoo</p>
+        <div class="post_results" id="post_results10" rss_num="4" rss_url="http://news.yahoo.com/rss/sports">
+            <div class="loading_rss">
+                <img alt="Loading..." src="Images/loading.gif" />
+            </div>
+        </div>
+        <p>FOX</p>
+        <div class="post_results" id="post_results11" rss_num="4" rss_url="http://api.foxsports.com/v1/rss?partnerKey=zBaFxRyGKCfxBagJG9b8pqLyndmvo7UU">
+            <div class="loading_rss">
+                <img alt="Loading..." src="Images/loading.gif" />
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+<!weather>
+    <div  id="wheatherId" style="
+    background:#FFF;
+ 
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+">
+        <h1>Weather</h1>
+        <p>Yahoo</p>
+        <div class="post_results" id="post_results12" rss_num="4" rss_url="http://news.yahoo.com/rss/weather/">
+            <div class="loading_rss">
+                <img alt="Loading..." src="Images/loading.gif" />
+            </div>
+        </div>
+    </div>
+    
+<!World>
+    <div  id="worldId" style="
+    background:#FFF;
+ 
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+">
+        <h1>World</h1>
+		<p>Yahoo</p>
+        <div class="post_results" id="post_results3" rss_num="4" rss_url="http://news.yahoo.com/rss/us/">
+            <div class="loading_rss">
+                <img alt="Loading..." src="Images/loading.gif" />
+            </div>
+        </div>
+        <p>BBC</p>
+        <div class="post_results" id="post_results1" rss_num="4" rss_url="http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml">
+            <div class="loading_rss">
+                <img alt="Loading..." src="Images/loading.gif" />
+            </div>
+        </div>
+        <p>CNN</p>
+        <div class="post_results" id="post_results2" rss_num="4" rss_url="http://rss.cnn.com/rss/edition_world.rss">
+            <div class="loading_rss">
+                <img alt="Loading..." src="Images/loading.gif" />
+            </div>
+        </div>
+
+        <p>FOX</p>
+        <div class="post_results" id="post_results4" rss_num="4" rss_url="http://feeds.foxnews.com/foxnews/world">
+            <div class="loading_rss">
+                <img alt="Loading..." src="Images/loading.gif" />
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+<!-- -----------------------------------Tech-------------------------------------------- -->
+    <div  id="techId" style="
+    background:#FFF;
+ 
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+">
+        <h1>Tech</h1>
+        <p>BCC</p>
+        <div class="post_results" id="post_results5" rss_num="4" rss_url="http://feeds.bbci.co.uk/news/technology/rss.xml">
+            <div class="loading_rss">
+                <img alt="Loading..." src="Images/loading.gif" />
+            </div>
+        </div>
+        <p>CNN</p>
+        <div class="post_results" id="post_results6" rss_num="4" rss_url="http://rss.cnn.com/rss/cnn_tech.rss">
+            <div class="loading_rss">
+                <img alt="Loading..." src="Images/loading.gif" />
+            </div>
+            
+        </div>
+        <p>FOX</p>
+        <div class="post_results" id="post_results7" rss_num="4" rss_url="http://feeds.foxnews.com/foxnews/tech">
+            <div class="loading_rss">
+                <img alt="Loading..." src="Images/loading.gif" />
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+
+    </div>    
+</body>
+</html>
